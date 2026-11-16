@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/tlo1">
+
+    <LinearLayout
+        android:id="@+id/cardLayou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@color/card_bg">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mój personalizator tekstu"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/btnChangeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zmień tekst"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnChangeColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zmień kolor tekstu"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnChangeBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zmień tło"
+            android:layout_marginTop="8dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tryb nocny"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>
